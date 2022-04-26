@@ -49,7 +49,7 @@ export class ShoppingCartService {
     this.totalSubject.next(total);
   }
 
-  public resetCart(): void {
+  resetCart(): void {
     this.cartSubject.next([]);
     this.totalSubject.next(0);
     this.quantitySubject.next(0);
